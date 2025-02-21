@@ -1,0 +1,27 @@
+#
+# Simulationbox with two electrodes and IL
+#
+
+tolerance 2.0
+filetype pdb
+output packmol.pdb
+seed 1983757
+add_box_sides
+
+structure tyrosine.pdb  # caco3_lower_type_start
+  number 1
+  fixed 20.0 20.0 18.0 0. 0. 0.
+  constrain_rotation x 0. 20.
+  constrain_rotation z 0. 20.
+end structure
+
+structure MOLECULE.pdb  # caco3_lower_type_start
+  number 1
+  fixed 20.00 20.00 27.0 0. 0. 0.
+  constrain_rotation x 0. 20.
+  constrain_rotation y 0. 20.
+  constrain_rotation z 0. 20.
+end structure
+
+
+

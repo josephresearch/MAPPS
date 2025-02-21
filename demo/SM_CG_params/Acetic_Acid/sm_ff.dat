@@ -1,0 +1,45 @@
+mass                41  60.052 
+
+pair_coeff  1  41  wf/cut  0.2712  5.6007  1  3  16.8022
+pair_coeff  2  41  wf/cut  0.1763  4.7143  1  3  14.1429
+pair_coeff  3  41  wf/cut  0.1193  5.7024  1  3  17.1073
+pair_coeff  4  41  wf/cut  0.2251  5.3113  1  3  15.9338
+pair_coeff  5  41  wf/cut  0.1314  5.7863  1  3  17.3588
+pair_coeff  6  41  wf/cut  0.1648  5.0018  1  3  15.0054
+pair_coeff  7  41  wf/cut  0.2017  5.2785  1  3  15.8355
+pair_coeff  8  41  wf/cut  0.2107  5.4556  1  3  16.3668
+pair_coeff  9  41  wf/cut  0.3333  5.7336  1  3  17.2007
+pair_coeff  10  41  wf/cut  0.1888  5.4997  1  3  16.4992
+pair_coeff  11  41  wf/cut  0.2364  5.6338  1  3  16.9014
+pair_coeff  12  41  wf/cut  0.2682  5.5057  1  3  16.5170
+pair_coeff  13  41  wf/cut  0.3149  5.9000  1  3  17.7001
+pair_coeff  14  41  wf/cut  0.2939  5.6815  1  3  17.0446
+pair_coeff  15  41  wf/cut  0.1759  5.0731  1  3  15.2193
+pair_coeff  16  41  wf/cut  0.3075  5.5356  1  3  16.6069
+pair_coeff  17  41  wf/cut  0.1905  5.3284  1  3  15.9853
+pair_coeff  18  41  wf/cut  0.1718  5.2698  1  3  15.8095
+pair_coeff  19  41  wf/cut  0.1973  5.2289  1  3  15.6868
+pair_coeff  20  41  wf/cut  0.1998  5.8276  1  3  17.4828
+
+pair_coeff  41  41  wf/cut  0.1177   4.7340   1  3  14.2020
+
+pair_coeff 21 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 22 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 23 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 24 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 25 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 26 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 27 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 28 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 29 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 30 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 31 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 32 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 33 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 34 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 35 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 36 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 37 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 38 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 39 41 wf/cut 0.429186 7.486 1 2 22.458
+pair_coeff 40 41 wf/cut 0.429186 7.486 1 2 22.458

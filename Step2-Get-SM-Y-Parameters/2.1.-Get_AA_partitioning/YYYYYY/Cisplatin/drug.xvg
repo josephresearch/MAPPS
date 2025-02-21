@@ -1,0 +1,74 @@
+# This file was created Fri Nov 22 10:01:44 2024
+# Created by:
+#                     :-) GROMACS - gmx density, 2023.3 (-:
+# 
+# Executable:   /home/ae3301/.local/bin/gmx_gpu
+# Data prefix:  /home/ae3301/.local
+# Working dir:  /scratch/gpfs/ae3301/mixtures_peptides/Y_drugs_logp/YYYYYY/Cisplatin
+# Command line:
+#   gmx_gpu density -f nvt_ext.xtc -n index.ndx -s nvt.tpr -o drug.xvg -d X -center -sl 50 -dens number -b 250000 -e 500000
+# gmx density is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Number density (nm\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "MOL"
+      -9.016          1.21384
+      -8.648          1.01823
+       -8.28           1.0584
+      -7.912          1.32737
+      -7.544          1.32038
+      -7.176          1.32038
+      -6.808          1.41469
+       -6.44          1.23131
+      -6.072          0.97806
+      -5.704          1.15446
+      -5.336          1.09857
+      -4.968          1.20511
+        -4.6          1.33261
+      -4.232          1.28021
+      -3.864          1.19288
+      -3.496          1.05665
+      -3.128           1.0322
+       -2.76          0.81214
+      -2.392         0.934397
+      -2.024          1.28894
+      -1.656         0.702108
+      -1.288         0.174654
+       -0.92        0.0331842
+      -0.552        0.0366773
+      -0.184       0.00174654
+       0.184                0
+       0.552                0
+        0.92                0
+       1.288                0
+       1.656         0.115271
+       2.024         0.469818
+       2.392           0.8069
+        2.76          1.43216
+       3.128          1.57538
+       3.496          1.41295
+       3.864            1.385
+       4.232          1.34309
+         4.6          1.45486
+       4.968          1.32038
+       5.336          1.29768
+       5.704           1.3134
+       6.072          1.25401
+        6.44          1.09508
+       6.808          1.17193
+       7.176          1.33435
+       7.544          1.20162
+       7.912          1.23655
+        8.28          1.20162
+       8.648          1.06539
+       9.016           1.2837

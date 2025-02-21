@@ -1,0 +1,20 @@
+#
+# Simulationbox with two electrodes and IL
+#
+
+tolerance 2.0
+filetype pdb
+output packmol.pdb
+seed 1983757
+add_box_sides
+
+structure chain_20_0.pdb   
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure
+
+
+
+
+
+

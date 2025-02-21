@@ -1,0 +1,15 @@
+tolerance 2.0
+filetype pdb
+output packmol.pdb
+seed 1983757
+add_box_sides
+
+structure ../FYAFYF/FYAFYF.pdb
+  number  150
+  inside box 0.0 0.0 0.0 70.0 70.0 70.0
+end structure
+
+structure ../../small_molecules/Aniline/Aniline.pdb
+  number 50
+  inside box 0.0 0.0 0.0 70.0 70.0 70.0
+end structure

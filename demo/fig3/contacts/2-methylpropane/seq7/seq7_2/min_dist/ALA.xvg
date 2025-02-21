@@ -1,0 +1,53 @@
+# This file was created Mon Aug  5 10:40:59 2024
+# Created by:
+#                     :-) GROMACS - gmx mindist, 2023.3 (-:
+# 
+# Executable:   /home/ae3301/.local/bin/gmx_gpu
+# Data prefix:  /home/ae3301/.local
+# Working dir:  /scratch/gpfs/ae3301/mixtures_peptides/single_chain_AA/2-methylpropane/seq7/seq7_2
+# Command line:
+#   gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ALA.xvg -on numcont_ALA.xvg -n res_ndx.ndx
+# gmx mindist is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Minimum Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "MOL_&_!H*-ALA_&_!H*"
+4.000000e+05  5.314178e-01
+4.050000e+05  1.489694e+00
+4.100000e+05  8.961715e-01
+4.150000e+05  1.452032e+00
+4.200000e+05  1.730180e+00
+4.250000e+05  1.423482e+00
+4.300000e+05  1.599902e+00
+4.350000e+05  6.693414e-01
+4.400000e+05  7.469333e-01
+4.450000e+05  1.234590e+00
+4.500000e+05  1.275422e+00
+4.550000e+05  6.110626e-01
+4.600000e+05  6.705409e-01
+4.650000e+05  1.255950e+00
+4.700000e+05  1.374395e+00
+4.750000e+05  1.330577e+00
+4.800000e+05  1.624677e+00
+4.850000e+05  1.738636e+00
+4.900000e+05  1.171896e+00
+4.950000e+05  1.479184e+00
+5.000000e+05  1.236982e+00
+5.050000e+05  1.627192e+00
+5.100000e+05  1.252099e+00
+5.150000e+05  6.826298e-01
+5.200000e+05  1.382608e+00
+5.250000e+05  1.242215e+00
+5.300000e+05  1.420119e+00
+5.350000e+05  3.752162e-01
+5.400000e+05  1.374656e+00

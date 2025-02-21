@@ -1,0 +1,69 @@
+variable temperature equal 300.0
+variable randomSeed equal 15973
+
+units       real
+dimension   3
+boundary    p p p
+atom_style  full
+
+bond_style  harmonic
+dielectric  80.0
+
+read_data       final-structure_300.dat  extra/atom/types 1  # extra/bond/types 2 extra/angle/types 3  extra/bond/per/atom 4 extra/angle/per/atom 4 extra/special/per/atom 3
+
+include         set_pair_param-Mpipi_upd.dat
+
+molecule        molecule_sm mol.dat offset 40 1 0 0 0
+create_atoms    41 random 350 12345 NULL overlap 5
+
+include         sm_ff.dat
+
+#velocity        all create ${temperature} ${randomSeed}
+special_bonds   fene
+
+# neighbour list settings
+neighbor        3.5 multi
+
+# Timestep and computational parameters
+comm_style      tiled
+timestep        10
+
+neigh_modify    every 10 delay 0
+
+fix             fxnve   all nve
+fix             fxlange all langevin ${temperature} ${temperature} 100000.0 ${randomSeed}
+fix             fxbal  all balance 1000 1.1 rcb
+
+run             1000
+
+group           condensate type 1:20
+group           drug type 41
+
+compute myChunk1 condensate chunk/atom bin/1d x lower 0.02 units reduced
+fix densityRegions1 condensate ave/chunk 1000 80 100000  myChunk1 density/mass file densities_cond_chunked2_${temperature}.dat
+
+compute myChunk2 drug chunk/atom bin/1d x lower 0.02 units reduced
+fix densityRegions2 drug ave/chunk 1000 80 100000  myChunk2 density/mass file densities_drug_chunked2_${temperature}.dat 
+
+compute myChunk3 all chunk/atom bin/1d x lower 0.02 units reduced
+fix densityRegions3 all ave/chunk 1000 80 100000  myChunk3 density/mass file densities_chunked2_${temperature}.dat 
+
+fix fixCOM all recenter INIT INIT INIT  # this helps to prevent drift of the interfaces and makes it easier to average over many measurements
+
+compute group_energy condensate group/group drug 
+
+# Thermo output settings
+thermo          100000
+thermo_style    custom step pe ecoul ke temp press density c_group_energy[1] atoms
+thermo_modify   flush yes
+
+# Equilibration
+run             10000000
+
+dump            1 all custom 50000 result.lammpstrj_${temperature} id mol type q x y z
+
+# Run simulation
+run             20000000
+
+# write final configuration
+write_data      final-structure_${temperature}_SM.dat nocoeff

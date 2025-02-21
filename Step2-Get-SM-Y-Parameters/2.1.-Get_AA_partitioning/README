@@ -1,0 +1,17 @@
+# AA Partitioning Script
+
+This script calculates the AA partitioning for a given drug or multiple drugs.
+
+## Usage
+
+```bash
+python get_AA_partitioning_6Y.py <DRUG>
+```
+
+Multiple drugs can be input, separated by spaces.
+
+### Example
+
+```bash
+python get_AA_partitioning_6Y.py '2-Methylpropane' 'Cisplatin' 'Phenol' 'Styrene' 'Nitrobenzene' 'Acetic Acid' 'Aniline' 'Benzonitrile' 'Cyclopentanol' 'Dioxane' 'Furan' 'Pyrrole' 'Thiophenol' 'Toluene'
+```

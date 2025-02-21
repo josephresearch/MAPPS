@@ -1,0 +1,20 @@
+# Self-Interaction Parameters for Small Molecules
+
+This folder is used to generate self-interaction parameters for small molecules.
+
+## Folder Structure
+
+- **compounds**: Contains subfolders named after each compound, each containing a PMF profile for self-interaction.
+
+## Usage
+
+The Jupyter notebook `write_params_molecules_self.ipynb` uses the PMF profiles to extract the parameters for the Wang-Frenkel potential and outputs them in a text file. These parameters should then be used in Step 2.2 when creating input files for small molecules.
+
+Run the Jupyter notebook to get those parameters.
+
+## Steps
+
+1. Navigate to the `compounds` folder, create a subfolder with a molecule and save there a PMF profile obtained from GROMACS simulation.
+2. Open and run the Jupyter notebook `write_params_molecules_self.ipynb`.
+3. Use the generated parameters in Step 2.2 for creating input files for small molecules.
+

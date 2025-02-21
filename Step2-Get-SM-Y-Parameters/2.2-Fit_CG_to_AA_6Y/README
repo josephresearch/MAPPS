@@ -1,0 +1,16 @@
+# README
+
+## Instructions
+
+1. Create the folder `YYYYYY/runs/config1_<DRUG>/mol_350/`
+2. Modify the file `YYYYYY/runs/config1_<DRUG>/mol_350/sm_ff.dat`:
+    - Type in the molar mass
+    - Choose an initial guess for epsilon for `pair_coeff 9-41` (default 0.5) and type in the appropriate sigma value
+    - For `41-41`, type in parameters from self molecules PMF
+3. Run the following commands:
+    ```sh
+    python make_runs.py
+    python find_matching_parameters.py <DRUG>
+    ```
+
+`<DRUG>` is the name of the drug you are working with. Replace `<DRUG>` with the actual drug name.

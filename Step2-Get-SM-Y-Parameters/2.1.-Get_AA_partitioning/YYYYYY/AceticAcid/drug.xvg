@@ -1,0 +1,74 @@
+# This file was created Mon Dec 16 13:42:26 2024
+# Created by:
+#                     :-) GROMACS - gmx density, 2023.3 (-:
+# 
+# Executable:   /home/ae3301/.local/bin/gmx_gpu
+# Data prefix:  /home/ae3301/.local
+# Working dir:  /scratch/gpfs/ae3301/mixtures_peptides/Y_drugs_logp/YYYYYY/AceticAcid
+# Command line:
+#   gmx_gpu density -f nvt_ext.xtc -n index.ndx -s nvt2.tpr -o drug.xvg -d X -center -sl 50 -dens number -b 500000
+# gmx density is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Number density (nm\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "MOL"
+      -9.016         0.857068
+      -8.648         0.846548
+       -8.28          0.80657
+      -7.912         0.833923
+      -7.544         0.742044
+      -7.176         0.779918
+      -6.808         0.929309
+       -6.44         0.813583
+      -6.072         0.882317
+      -5.704         0.886526
+      -5.336         0.912476
+      -4.968         0.826208
+        -4.6         0.859874
+      -4.232           0.8732
+      -3.864         0.779918
+      -3.496         0.915983
+      -3.128         0.856367
+       -2.76         0.987522
+      -2.392         0.835326
+      -2.024          0.70908
+      -1.656         0.507788
+      -1.288         0.280546
+       -0.92           0.2567
+      -0.552        0.0708379
+      -0.184        0.0182355
+       0.184         0.375932
+       0.552          0.28756
+        0.92        0.0526024
+       1.288        0.0680324
+       1.656         0.303691
+       2.024         0.530232
+       2.392         0.810778
+        2.76          1.11517
+       3.128          1.02259
+       3.496           0.8732
+       3.864         0.891435
+       4.232         0.898449
+         4.6         0.857769
+       4.968         0.748357
+       5.336         0.841638
+       5.704         0.809375
+       6.072         0.819194
+        6.44         0.784828
+       6.808         0.782022
+       7.176         0.845145
+       7.544          0.69365
+       7.912         0.652971
+        8.28         0.804466
+       8.648         0.838833
+       9.016         0.853561
