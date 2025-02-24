@@ -35,7 +35,7 @@
 
 ## Step 1: Self-Interaction Parameters for Small Molecules
 
-This folder is used to generate self-interaction parameters for small molecules from.
+This folder is used to generate self-interaction parameters for small molecules from the pair PMF profiles.
 ### Folder Structure
 
 - **compounds**: Contains subfolders named after each compound, each containing a PMF profile for self-interaction.
