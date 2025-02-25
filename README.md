@@ -78,21 +78,19 @@ Navigate to the folder `Step2-fit-params_6Y/2.2-Fit_CG_to_AA_6Y`.
 
 1. Create the folder `YYYYYY/runs/config1_<DRUG>/mol_350/`.
 2. Modify the file `YYYYYY/runs/config1_<DRUG>/mol_350/sm_ff.dat`:
-        - Type in the molar mass.
-        - Choose an initial guess for epsilon for `pair_coeff 9-41` (default 0.5) and type in the appropriate sigma value.
-        - For `41-41`, type in parameters from self molecules PMF (from Step1-Get-SM-SM-Parameters).
+   - Type in the molar mass.
+   - Choose an initial guess for epsilon for `pair_coeff 9-41` (default 0.5) and type in the appropriate sigma value.
+   - For `41-41`, type in parameters from self molecules PMF (from Step1-Get-SM-SM-Parameters).
+
 3. Run the following commands:
-        ```sh
-        python make_runs.py
-        ```
-        and submit simulations by running:
-        ```sh
-        YYYYYY/runs/config1_<DRUG>/submit.sh
-        ```
 
-Then run:
+   ```bash
+   python make_runs.py
+   bash YYYYYY/runs/config1_<DRUG>/submit.sh
+   ```
+After the simulations are finished, run the following script to obtain SM-Y parameter:
 
-```sh
+```
 python find_matching_parameters.py <DRUG>
 ```
 
