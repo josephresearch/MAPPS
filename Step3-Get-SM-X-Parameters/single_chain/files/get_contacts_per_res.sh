@@ -1,0 +1,21 @@
+( echo '41'; echo '21' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ALA.xvg -on numcont_ALA.xvg -n res_ndx.ndx  
+( echo '41'; echo '22' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ARG.xvg -on numcont_ARG.xvg -n res_ndx.ndx  
+( echo '41'; echo '23' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ASN.xvg -on numcont_ASN.xvg -n res_ndx.ndx  
+( echo '41'; echo '24' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ASP.xvg -on numcont_ASP.xvg -n res_ndx.ndx  
+( echo '41'; echo '25' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od CYS.xvg -on numcont_CYS.xvg -n res_ndx.ndx  
+( echo '41'; echo '26' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od GLN.xvg -on numcont_GLN.xvg -n res_ndx.ndx  
+( echo '41'; echo '27' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od GLU.xvg -on numcont_GLU.xvg -n res_ndx.ndx  
+( echo '41'; echo '28' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od GLY.xvg -on numcont_GLY.xvg -n res_ndx.ndx  
+( echo '41'; echo '29' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od HIS.xvg -on numcont_HIS.xvg -n res_ndx.ndx  
+( echo '41'; echo '30' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od ILE.xvg -on numcont_ILE.xvg -n res_ndx.ndx  
+( echo '41'; echo '31' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od LEU.xvg -on numcont_LEU.xvg -n res_ndx.ndx  
+( echo '41'; echo '32' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od LYS.xvg -on numcont_LYS.xvg -n res_ndx.ndx  
+( echo '41'; echo '33' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od MET.xvg -on numcont_MET.xvg -n res_ndx.ndx  
+( echo '41'; echo '34' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od PHE.xvg -on numcont_PHE.xvg -n res_ndx.ndx  
+( echo '41'; echo '35' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od PRO.xvg -on numcont_PRO.xvg -n res_ndx.ndx  
+( echo '41'; echo '36' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od SER.xvg -on numcont_SER.xvg -n res_ndx.ndx  
+( echo '41'; echo '37' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od THR.xvg -on numcont_THR.xvg -n res_ndx.ndx  
+( echo '41'; echo '38' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od TRP.xvg -on numcont_TRP.xvg -n res_ndx.ndx  
+( echo '41'; echo '39' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od TYR.xvg -on numcont_TYR.xvg -n res_ndx.ndx  
+( echo '41'; echo '40' ) | gmx_gpu mindist -f nvt2.part0002.trr -s nvt2.tpr -d 0.6 -group yes -od VAL.xvg -on numcont_VAL.xvg -n res_ndx.ndx  
+rm *#

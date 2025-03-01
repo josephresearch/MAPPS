@@ -1,0 +1,2 @@
+( echo 'r ALA & !a H*'; echo 'r ARG & !a H*'; echo 'r ASN & !a H*'; echo 'r ASP & !a H*';  echo 'r CYS & !a H*'; echo 'r GLN & !a H*'; echo 'r GLU & !a H*'; echo 'r GLY & !a H*'; echo 'r HIS & !a H*'; echo 'r ILE & !a H*'; echo 'r LEU & !a H*'; echo 'r LYS & !a H*'; echo 'r MET & !a H*'; echo 'r PHE & !a H*'; echo 'r PRO & !a H*'; echo 'r SER & !a H*'; echo 'r THR & !a H*';  echo 'r TRP & !a H*'; echo 'r TYR & !a H*'; echo 'r VAL & !a H*'; echo 'r MOL & !a H*'; echo 'q';) | gmx_gpu make_ndx -f solvated.gro -o res_ndx
+
