@@ -2,7 +2,7 @@
 
 > This is a supporting code for manuscript for "Prediction of small-molecule partitioning into biomolecular condensates from simulation" (2025) [Alina Emelianova, Pablo L. Garcia, Daniel Tan, and Jerelle A. Joseph].
 
-> The following steps can be used to generate the coarse-grained parameters for small molecule using MAPPS algorithm from the generated all-atom (AA) and coarse-grained (CG) simulations data with GROMACS and LAMMPS. The folders contain the simulation files used to generate the data for the original publication. The code is not fully automated (yet) and assumes the output data from the PMF and slab simulations in both AA and CG resolutions is available. The demo files to generate such data are supplied.
+> The following steps can be used to generate the coarse-grained parameters for small molecule using MAPPS algorithm from the generated all-atom (AA) and coarse-grained (CG) simulations data with GROMACS and LAMMPS. The folders contain the simulation files used to generate the data for the original publication. The code is not fully automated (yet) and assumes the output data from the PMF and slab simulations in both AA and CG resolutions is available. The demo files to generate such data are supplied, as well as the input files used to obtain the result presented in the publication.
 
 ## Table of Contents
 
